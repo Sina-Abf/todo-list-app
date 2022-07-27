@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import UserInfo from './UserInfo';
 
 const Todo = () => {
-  return <h1>This is All Todos!</h1>;
+  return (
+    <Fragment>
+      <UserInfo />
+    </Fragment>
+  );
 };
 
 export default Todo;

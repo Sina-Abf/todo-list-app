@@ -1,0 +1,10 @@
+.info h1 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.info p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  opacity: 60%;
+  margin-left: 5px;
+}
