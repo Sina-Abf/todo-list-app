@@ -8,13 +8,15 @@ const TodoItem = () => {
         <input type="checkbox" />
         <h1>Design signup flow</h1>
       </div>
-      <p>
+      <p className={classes.description}>
         By the time a prospect arrives at your signup page, in most casses..
       </p>
-      <div>
+      <div className={classes.footer}>
         <h3>Subject</h3>
-        <p>Pinned:</p>
-        <p>Comments:</p>
+        <div>
+          <p>Pinned:</p>
+          <p>Comments:</p>
+        </div>
       </div>
     </li>
   );
