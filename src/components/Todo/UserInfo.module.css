@@ -8,3 +8,19 @@
   opacity: 60%;
   margin-left: 5px;
 }
+
+.btn {
+  border: 2px solid green;
+  color: black;
+  font-weight: 600;
+  width: 50%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn:hover {
+  background: green;
+  color: white;
+}

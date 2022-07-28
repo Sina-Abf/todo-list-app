@@ -17,12 +17,13 @@
 .form input {
   outline: none;
   font-size: 18px;
-  padding: 2px 10px;
+  padding: 5px 10px;
 }
 
 .form textarea {
-  font-size: 18px;
   padding: 10px 10px;
+  font: inherit;
+  font-size: 20px;
 }
 
 .form button {
