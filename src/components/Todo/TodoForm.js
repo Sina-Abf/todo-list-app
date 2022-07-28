@@ -1,22 +1,28 @@
 import React, { Fragment } from 'react';
-import Button from '../../Ui/Button';
 import classes from './TodoForm.module.css';
+
 const TodoForm = () => {
   return (
     <Fragment>
+      <h1 className={classes.modalForm}>Please Fill The Forms</h1>
       <form className={classes.form}>
         <div>
-          <label htmlFor="todo-title">Title:</label>
-          <input placeholder="Enter a title..." type="text" id="todo-title" />
-        </div>
-        <div>
-          <label htmlFor="todo-description">Description:</label>
-          <textarea
-            placeholder="Enter Your Description..."
-            id="todo-description"
+          <label htmlFor="todo-title">Title</label>
+          <input
+            id="todo-title"
+            type="text"
+            placeholder="Enter Your Todo Title..."
           />
         </div>
-        <Button>Submit</Button>
+        <div>
+          <label htmlFor="todo-description">Description</label>
+          <textarea
+            id="todo-title"
+            type="text"
+            placeholder="Enter Your Todo Title..."
+          />
+        </div>
+        <button>Submit</button>
       </form>
     </Fragment>
   );

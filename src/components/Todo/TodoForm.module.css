@@ -2,22 +2,43 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .form label {
   display: block;
-  font-size: 22px;
-  margin-bottom: 6px;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .form input {
-  padding: 5px 0.5rem;
   outline: none;
-  font-size: 20px;
+  font-size: 18px;
+  padding: 2px 10px;
 }
 
 .form textarea {
-  font-size: 20px;
-  padding: 0.5rem;
+  font-size: 18px;
+  padding: 10px 10px;
+}
+
+.form button {
+  font: inherit;
+  background: green;
+  border: none;
+  color: #fff;
+  padding: 0.6rem 0.8rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background: rgb(0, 164, 0);
+}
+
+.modalForm {
+  margin-bottom: 20px;
 }
