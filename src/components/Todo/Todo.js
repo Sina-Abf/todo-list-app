@@ -4,6 +4,7 @@ import UserInfo from './UserInfo';
 import TodoForm from './TodoForm';
 import { useSelector, useDispatch } from 'react-redux';
 import { uiActions } from '../../store/ui-slice';
+import TodoList from './TodoList';
 const Todo = () => {
   const dispatch = useDispatch();
 
@@ -24,6 +25,7 @@ const Todo = () => {
           <TodoForm />
         </Modal>
       )}
+      <TodoList />
     </Fragment>
   );
 };

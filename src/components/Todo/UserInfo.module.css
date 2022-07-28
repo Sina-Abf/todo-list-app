@@ -7,17 +7,21 @@
   font-size: 1.2rem;
   opacity: 60%;
   margin-left: 5px;
+  margin-bottom: 2rem;
+}
+
+.btnWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
 }
 
 .btn {
   border: 2px solid green;
   color: black;
-  font-weight: 600;
   width: 50%;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .btn:hover {

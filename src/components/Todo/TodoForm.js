@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import Button from '../Ui/Button';
 import classes from './TodoForm.module.css';
 
 const TodoForm = () => {
@@ -19,10 +20,10 @@ const TodoForm = () => {
           <textarea
             id="todo-title"
             type="text"
-            placeholder="Enter Your Todo Title..."
+            placeholder="Enter Your Todo Description..."
           />
         </div>
-        <button>Submit</button>
+        <Button>Submit</Button>
       </form>
     </Fragment>
   );

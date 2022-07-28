@@ -1,0 +1,13 @@
+.items {
+  list-style: none;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title h1 {
+  font-size: 25px;
+}
