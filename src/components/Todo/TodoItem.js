@@ -1,21 +1,19 @@
 import React from 'react';
 import classes from './TodoItem.module.css';
 
-const TodoItem = () => {
+const TodoItem = (props) => {
   return (
     <li className={classes.items}>
       <div className={classes.title}>
         <input type="checkbox" />
-        <h1>Design signup flow</h1>
+        <h1>{props.title}</h1>
       </div>
-      <p className={classes.description}>
-        By the time a prospect arrives at your signup page, in most casses..
-      </p>
+      <p className={classes.description}>{props.description}</p>
       <div className={classes.footer}>
-        <h3>Subject</h3>
+        <h3>{props.subject}</h3>
         <div>
-          <p>Pinned:</p>
-          <p>Comments:</p>
+          <p>Pinned: 0</p>
+          <p>Comments: 0</p>
         </div>
       </div>
     </li>

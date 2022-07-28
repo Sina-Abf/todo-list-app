@@ -2,5 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: drop-shadow(-2px 4px 5px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(-2px 2px 5px rgba(0, 0, 0, 0.2));
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
