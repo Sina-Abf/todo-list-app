@@ -28,6 +28,7 @@ const TodoList = () => {
           {staticContent.map((item) => {
             return (
               <TodoItem
+                key={item.id}
                 id={item.id}
                 title={item.title}
                 description={item.description}

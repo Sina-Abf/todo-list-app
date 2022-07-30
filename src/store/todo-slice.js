@@ -4,7 +4,9 @@ const todoSlice = createSlice({
   name: 'TODO',
   initialState: { todoList: [] },
   reducers: {
-    addNewTodo() {},
+    addNewTodo(state, action) {
+      state.todoList.push(action.payload);
+    },
     removeTodo() {},
     updateTodo() {},
     editTodo() {},
