@@ -1,5 +1,5 @@
 import React, { Fragment, useRef } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { todoActions } from '../../store/todo-slice';
 import { uiActions } from '../../store/ui-slice';
 import Button from '../Ui/Button';
@@ -14,8 +14,10 @@ const TodoForm = () => {
     event.preventDefault();
     const title = titleData.current.value;
     const description = descriptionData.current.value;
+    if (!title && !description) return;
     dispatch(
       todoActions.addNewTodo({
+        id: Math.random(),
         title,
         description,
       })
