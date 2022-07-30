@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const todoSlice = createSlice({
   name: 'TODO',
-  initialState: { todoList: [] },
+  initialState: { todoList: [], isChecked: false },
   reducers: {
     addNewTodo(state, action) {
       state.todoList.push(action.payload);
@@ -10,6 +10,9 @@ const todoSlice = createSlice({
     removeTodo() {},
     updateTodo() {},
     editTodo() {},
+    setIsChecked(state) {
+      state.isChecked = true;
+    },
   },
 });
 

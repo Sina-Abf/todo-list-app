@@ -21,6 +21,7 @@ const TodoList = () => {
                 title={item.title}
                 description={item.description}
                 subject={item.subject}
+                date={item.date}
               />
             );
           })}

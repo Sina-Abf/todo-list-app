@@ -29,6 +29,7 @@ const TodoForm = () => {
         title,
         description,
         subject,
+        date: new Date().toLocaleDateString('en-US'),
       })
     );
     dispatch(uiActions.setIsInvisible());
@@ -59,7 +60,7 @@ const TodoForm = () => {
           />
         </div>
         <select ref={subjectData}>
-          <option selected="selected">Select a Subject..</option>
+          <option defaultValue="selected">Select a Subject..</option>
           <option>Design</option>
           <option>Graphic</option>
           <option>Programming</option>
