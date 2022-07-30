@@ -1,4 +1,4 @@
-import React, { Fragment, useRef } from 'react';
+import React, { Fragment, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { todoActions } from '../../store/todo-slice';
 import { uiActions } from '../../store/ui-slice';
@@ -6,20 +6,29 @@ import Button from '../Ui/Button';
 import classes from './TodoForm.module.css';
 
 const TodoForm = () => {
+  const [isDefault, setIsDefault] = useState(false);
   const dispatch = useDispatch();
   const titleData = useRef();
   const descriptionData = useRef();
+  const subjectData = useRef();
 
   const formSubmitHandler = (event) => {
     event.preventDefault();
     const title = titleData.current.value;
     const description = descriptionData.current.value;
-    if (!title && !description) return;
+    const subject = subjectData.current.value;
+    if (subject === 'Select a Subject..') {
+      setIsDefault(true);
+      return;
+    }
+
+    if (!title || !description || !subject) return;
     dispatch(
       todoActions.addNewTodo({
         id: Math.random(),
         title,
         description,
+        subject,
       })
     );
     dispatch(uiActions.setIsInvisible());
@@ -49,6 +58,14 @@ const TodoForm = () => {
             placeholder="Enter Your Todo Description..."
           />
         </div>
+        <select ref={subjectData}>
+          <option selected="selected">Select a Subject..</option>
+          <option>Design</option>
+          <option>Graphic</option>
+          <option>Programming</option>
+          <option>Other..</option>
+        </select>
+        {isDefault && <p className="error">Please select a subject!</p>}
         <Button>Submit</Button>
       </form>
     </Fragment>

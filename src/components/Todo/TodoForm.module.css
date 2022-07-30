@@ -43,3 +43,9 @@
 .modalForm {
   margin-bottom: 20px;
 }
+
+select {
+  width: 70%;
+  padding: 0.1rem;
+  font-size: 17px;
+}

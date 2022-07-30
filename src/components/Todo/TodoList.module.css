@@ -11,3 +11,9 @@
   flex-direction: column;
   gap: 2rem;
 }
+
+.fallback {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}

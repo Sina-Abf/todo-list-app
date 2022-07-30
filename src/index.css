@@ -11,3 +11,8 @@ body {
   background: #f6f6f6;
   padding: 5rem;
 }
+
+.error {
+  color: red;
+  font-size: 18px;
+}
