@@ -30,6 +30,7 @@
   opacity: 90%;
   color: #fff;
   width: 50%;
+  max-width: 50rem;
   transition: all 0.5s;
   animation: 2s ease-in-out slideInFromBottom;
 }
@@ -56,8 +57,11 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .info {
     text-align: center;
+  }
+  .btn {
+    min-width: 10rem;
   }
 }

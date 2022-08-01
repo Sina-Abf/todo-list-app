@@ -29,3 +29,9 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 800px) {
+  .fallback {
+    font-size: 18px;
+  }
+}

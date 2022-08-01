@@ -47,11 +47,11 @@ const TodoItem = (props) => {
             </form>
           )}
           <div className={classes.options}>
-            <p onClick={deleteHandler} className={classes.delete}>
-              Delete
-            </p>
             <p onClick={editHandler} className={classes.edit}>
               Edit
+            </p>
+            <p onClick={deleteHandler} className={classes.delete}>
+              Delete
             </p>
           </div>
         </div>
