@@ -46,24 +46,22 @@ const TodoItem = (props) => {
               />
             </form>
           )}
-          <p onClick={deleteHandler} className={classes.delete}>
-            Delete
-          </p>
-          <p onClick={editHandler} className={classes.edit}>
-            Edit
-          </p>
+          <div className={classes.options}>
+            <p onClick={deleteHandler} className={classes.delete}>
+              Delete
+            </p>
+            <p onClick={editHandler} className={classes.edit}>
+              Edit
+            </p>
+          </div>
         </div>
         <div>
-          <p>{props.date}</p>
+          <p className={classes.date}>{props.date}</p>
         </div>
       </div>
       <p className={classes.description}>{props.description}</p>
       <div className={classes.footer}>
         <h3>{props.subject}</h3>
-        <div>
-          <p>Pinned: 0</p>
-          <p>Comments: 0</p>
-        </div>
       </div>
     </li>
   );

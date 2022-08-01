@@ -1,8 +1,10 @@
 .items {
+  border-radius: 5px;
   min-width: 50rem;
   list-style: none;
   padding: 1rem 2rem;
-  background: white;
+  background: rgba(0, 0, 0, 0.6);
+  color: rgb(240, 240, 240);
 }
 
 .title {
@@ -37,19 +39,17 @@
 .footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 5rem;
-}
-
-.footer div {
-  display: flex;
-  gap: 1rem;
-  font-weight: 600;
+  justify-content: center;
 }
 
 .checked {
   background: green;
   color: white;
+}
+
+.options {
+  margin-left: 6rem;
+  font-size: 20px;
 }
 
 .delete {
@@ -67,4 +67,52 @@
   width: 100%;
   outline: none;
   padding: 0.5rem;
+}
+
+.date {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  .items {
+    min-width: auto;
+  }
+  .title {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .title div {
+    flex-direction: column;
+  }
+
+  .title h1 {
+    font-size: 18px;
+  }
+
+  .options {
+    margin-left: 0;
+    margin-right: 3.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .delete {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .edit {
+    font-size: 16px;
+  }
+
+  .title form input {
+    min-width: 7rem;
+  }
+
+  .date {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 1rem;
+  }
 }

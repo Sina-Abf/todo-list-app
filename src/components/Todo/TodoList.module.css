@@ -18,4 +18,14 @@
   text-align: center;
   font-size: 25px;
   font-weight: bold;
+  animation: 3s ease-in-out slideInFromBottom;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(25rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

@@ -10,7 +10,9 @@ const Modal = (props) => {
   return (
     <div>
       <Backdrop onClick={props.onClick} />
-      <Card className={classes.card}>{props.children}</Card>
+      <Card className={`${classes.card} ${props.className}`}>
+        {props.children}
+      </Card>
     </div>
   );
 };

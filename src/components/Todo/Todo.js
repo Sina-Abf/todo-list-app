@@ -5,6 +5,7 @@ import TodoForm from './TodoForm';
 import { useSelector, useDispatch } from 'react-redux';
 import { uiActions } from '../../store/ui-slice';
 import TodoList from './TodoList';
+import classes from './Todo.module.css';
 
 const Todo = () => {
   const dispatch = useDispatch();
@@ -22,7 +23,7 @@ const Todo = () => {
     <Fragment>
       <UserInfo onModalOpener={modalOpenHandler} />
       {modalSelector && (
-        <Modal onClick={modalCloseHandler}>
+        <Modal className={classes.modal} onClick={modalCloseHandler}>
           <TodoForm />
         </Modal>
       )}

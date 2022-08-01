@@ -29,7 +29,7 @@ const TodoForm = () => {
         title,
         description,
         subject,
-        date: new Date().toLocaleDateString('en-US'),
+        date: new Date().toLocaleDateString('en'),
       })
     );
     dispatch(uiActions.setIsInvisible());

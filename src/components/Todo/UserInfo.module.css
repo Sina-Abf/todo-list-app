@@ -55,3 +55,9 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 600px) {
+  .info {
+    text-align: center;
+  }
+}
