@@ -51,3 +51,20 @@
   background: green;
   color: white;
 }
+
+.delete {
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 4rem;
+}
+.edit {
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 4rem;
+}
+
+.title form input {
+  width: 100%;
+  outline: none;
+  padding: 0.5rem;
+}
