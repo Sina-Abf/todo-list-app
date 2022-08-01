@@ -13,6 +13,8 @@
 }
 
 .fallback {
+  color: #fff;
+  text-decoration: underline;
   text-align: center;
   font-size: 25px;
   font-weight: bold;

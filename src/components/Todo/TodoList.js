@@ -6,7 +6,9 @@ import { useSelector } from 'react-redux';
 const TodoList = () => {
   const todoItems = useSelector((state) => state.todo.todoList);
   if (todoItems.length === 0) {
-    return <p className={classes.fallback}>Add Some Todo!</p>;
+    return (
+      <p className={classes.fallback}>Start By Adding Your Daily Todos!</p>
+    );
   }
 
   return (

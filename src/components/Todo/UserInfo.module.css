@@ -1,13 +1,19 @@
+.info {
+  color: #fff;
+}
+
 .info h1 {
   font-weight: 600;
   margin-bottom: 10px;
+  animation: 1s ease slideInFromLeft;
 }
 .info p {
   font-weight: 400;
   font-size: 1.2rem;
   opacity: 60%;
-  margin-left: 5px;
+  margin-left: 8px;
   margin-bottom: 2rem;
+  animation: 2s ease slideInFromLeft;
 }
 
 .btnWrapper {
@@ -19,13 +25,33 @@
 }
 
 .btn {
-  border: 2px solid green;
-  color: black;
+  border: none;
+  background: black;
+  opacity: 90%;
+  color: #fff;
   width: 50%;
   transition: all 0.5s;
+  animation: 2s ease-in-out slideInFromBottom;
 }
 
 .btn:hover {
-  background: green;
-  color: white;
+  background: rgb(206, 103, 0);
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(-30rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
